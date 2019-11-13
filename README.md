@@ -27,7 +27,7 @@ And run it:
         int function_name() {
             // do something
             assrt(some == thing);
-            return 0;
+            return 1;
         }
 
 4. Run your test in main method with
@@ -55,4 +55,5 @@ Example output of `ctest_print_result`:
     test_foo:4 failed:
 	    1 not equal 0: 1 == 0
 
+    2 assertions
     2 tests, 1 passed, 1 failed

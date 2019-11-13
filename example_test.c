@@ -2,12 +2,12 @@
 
 static int test_foo() {
     assrt_m(1 == 0, "1 not equal 0");
-    return 0;
+    return 1;
 } 
 
 static int test_bar() {
     assrt(2 == 2);
-    return 0;
+    return 1;
 }
 
 int main(int argc, char *argv[]) {
