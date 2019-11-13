@@ -1,4 +1,4 @@
-#include "cimpletest.h"
+#include "ctest.h"
 
 static int test_foo() {
     assrt_m(1 == 0, "1 not equal 0");
