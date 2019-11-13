@@ -54,4 +54,5 @@ Example output of `ctest_print_result`:
 
     test_foo:4 failed:
 	    1 not equal 0: 1 == 0
+
     tests: 2 passed: 1 failed: 1
