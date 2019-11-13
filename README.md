@@ -24,15 +24,15 @@ And run it:
 2. Include it in your test file `#include "ctest.h"` (or paste code at the top of your file).
 3. Create a test function in the form of
 
-    int function_name() {
-        // do something
-        assrt(some == thing);
-        return 0;
-    }
+        int function_name() {
+            // do something
+            assrt(some == thing);
+            return 0;
+        }
 
 4. Run your test in main method with
 
-    run_test(function_name);
+        run_test(function_name);
 
 5. (optional) You can let your program fail if any test failed, by adding this to the main method `return tests_failed;`
 
