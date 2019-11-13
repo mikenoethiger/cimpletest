@@ -11,11 +11,11 @@ static int test_bar() {
 }
 
 int main(int argc, char *argv[]) {
-    run_test(test_bar);
-    run_test(test_foo);
-    print_test_result();
+    ctest_run(test_bar);
+    ctest_run(test_foo);
+    ctest_print_result();
     // following test will not be included into the test result,
-    // since it's not called via run_test()
+    // since it's not called via ctest_run()
     int result = test_bar();     
     return tests_failed;
 }

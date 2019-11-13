@@ -32,7 +32,7 @@ And run it:
 
 4. Run your test in main method with
 
-        run_test(function_name);
+        ctest_run(function_name);
 
 5. (optional) You can let your program fail if any test failed, by adding this to the main method `return tests_failed;`
 
@@ -40,8 +40,9 @@ Available methods:
     
     assrt(expr)             // asserts an expression, with expression being an int or something that evaluates to an int
     assrt_m(expr, msg)      // same as assrt with an additional message that is being displayed if assertion fails
-    run_test(*(test)(int))  // executes a test function (and makes sure to store result)
-    print_test_result()     // prints a short test result with total, passed and failed tests
+    ctest_run(*(test)(int)) // executes a test function (and makes sure to store result)
+    ctest_print_result()    // prints a short test result with total, passed and failed tests
+    ctest_print_version()   // print ctest version
 
 Following variables are available:
 
@@ -49,7 +50,7 @@ Following variables are available:
     tests_passed
     tests_failed
 
-Example output of `print_test_result`:
+Example output of `ctest_print_result`:
 
     test_foo:4 failed:
 	    1 not equal 0: 1 == 0
